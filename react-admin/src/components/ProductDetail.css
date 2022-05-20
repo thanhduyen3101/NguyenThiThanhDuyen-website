@@ -1,0 +1,119 @@
+.detail-product {
+    background-color: rgba(51, 51, 51, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.detail-product_layout {
+    width: 60%;
+    height: 80%;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-detail__top {
+    display: flex;
+}
+
+.product-detail-top-left {
+    width: 45%;
+    height: 400px;
+}
+
+.product-detail-top-left__img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.product-detail-top-right {
+    margin-left: 16px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-detail__name {
+    color: rgb(126, 56, 56);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-detail__cate {
+    color: rgb(87, 129, 206);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-detail__descriptiont {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    max-height: 200px;
+}
+
+.product-detail__price {
+    color: rgb(131, 11, 11);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.product-detail__stock-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-detail__stock-group>p {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.product-detail__stock-group>p>span {
+    color: rgb(44 10 236);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product-detail__button-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-detail__button-group>button {
+    padding: 5px 15px;
+    min-width: 130px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.product-detail__button-group>button:first-child {
+    background-color: green;
+}
+
+.product-detail__button-group>button:last-child {
+    background-color: red;
+}
+
+.product-detail__bot>h2 {
+    color: black;
+}

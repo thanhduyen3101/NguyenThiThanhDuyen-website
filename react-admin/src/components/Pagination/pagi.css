@@ -1,0 +1,31 @@
+.Pagi-page {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.Pagi-page>button {
+    padding: 10px 36px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.active-color {
+    background-color: rgb(189, 42, 42);
+    color: #fff;
+}
+
+.non-active-color {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* .Pagi-page button:first-child {
+    background-color: #f7ecec;
+} */
+
+
+/* .Pagi-page button:last-child {
+    background-color: rgba(119, 107, 107, 0.692);
+} */

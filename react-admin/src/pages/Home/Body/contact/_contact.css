@@ -1,0 +1,90 @@
+.contact-pic-top {
+    position: relative;
+    background-image: url('/src/assets/images/gcp_students_800x5000.jpg');
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-attachment: fixed;
+    background-size: 1550px 1017px;
+    min-height: 410px;
+    filter: opacity(32%);
+}
+
+.contact {
+    padding: 40px 138px;
+    background-color: #dee0ec;
+    min-height: 1540px;
+    color: #3b415b;
+}
+
+.contact-text {
+    padding-left: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-text:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.contact-text button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background-image: linear-gradient( 
+        to right, 
+        #ffc145 50%, 
+        #ffc145 50%, 
+        #f9dfab );
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 63px;
+    margin-right: 35px;
+}
+
+.contact-text button:hover {
+    background-position: 100% 0%;
+}
+
+.contact-text button:active {
+    transform: translateY(4px);
+}
+
+.contact-text-2 {
+    margin-left: 40px;
+}
+
+.contact-text-title {
+    font-weight: 600;
+}
+
+.contact-text p {
+    margin-left: 40px;
+}
+
+.contact-text ul {
+    padding: 0 15px;
+    line-height: 1.9;
+}
+
+.contact-text ul li {
+    list-style: none;
+    color: #3b415b;
+    font-size: 17px;
+    line-height: 40px;
+}
+
+.contact-icons {
+    margin-right: 10px;
+}
+
+.map-react {
+    margin-top: 50px;
+    margin-left: 170px;
+}

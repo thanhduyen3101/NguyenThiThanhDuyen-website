@@ -1,0 +1,81 @@
+.Login {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(72.8deg, #86e8ea 0%, #903cae 99.49%);
+}
+.Login .content-login {
+  width: 865px;
+  height: 500px;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 80%;
+  padding: 15px;
+}
+.Login .img-fluid {
+  max-width: 350px !important;
+}
+
+.Login form {
+  width: 300px;
+}
+.Login form .input-icon {
+  height: 45px;
+  width: 30%;
+  background: #e7e7e7;
+  border-radius: 100px 0px 0px 100px;
+}
+.Login form .input-custom {
+  background: #e7e7e7 !important;
+  border: unset !important;
+  border-radius: 0 100px 100px 0 !important;
+  height: 45px !important;
+}
+.Login form .input-custom:focus {
+  box-shadow: unset !important;
+}
+.Login form .btn-custom {
+  border-radius: 100px !important;
+  height: 45px;
+  width: 100%;
+  border: unset !important;
+  background-color: #5b5f97 !important;
+  transition: 0.4s;
+}
+.Login form .btn-custom:active {
+  transform: translateY(4px);
+}
+.Login form .btn-cancel {
+  border-radius: 100px !important;
+  height: 45px;
+  width: 100%;
+  border: unset !important;
+  background-color: #c4c4c4 !important;
+}
+.Login form .form-label {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+}
+.Login form a {
+  color: unset;
+  text-decoration: none;
+}
+.Login form a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 578px) {
+  .content-login .row .col-md-5 {
+    display: none;
+  }
+  .content-login .row .col-md-7 form {
+    width: 230px;
+  }
+  .content-login .row .col-md-7 form .mb-3 {
+    justify-content: center;
+  }
+  .content-login .row .col-md-7 form .mb-3 .input-icon {
+    padding-left: 20px !important;
+  }
+}

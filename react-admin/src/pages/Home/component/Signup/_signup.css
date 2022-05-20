@@ -1,0 +1,94 @@
+.container-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form {
+    background-color: #fffffb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 600px;
+    margin: 50px 0px;
+    border-radius: 15px;
+}
+
+.signup-form h3 {
+    /* text-transform: uppercase; */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3b415b;
+}
+
+form {
+    width: 100%;
+    padding: 5px 30px;
+}
+
+input[type="text"], select, [type="date"], [type="month"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="password"]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    color: #3b415b;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.form-flex {
+    display: flex;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.mr {
+    margin-right: 40px;
+}
+
+.pr {
+    padding-right: 35px;
+}
+
+.signup-form button {
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: linear-gradient( 
+        to right, 
+        #ffc145 50%, 
+        #ffc145 50%, 
+        #f9dfab );
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-top: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.signup-form button:hover {
+    background-position: 100% 0%;
+}
+
+.signup-form button:active {
+    transform: translateY(4px);
+}
+

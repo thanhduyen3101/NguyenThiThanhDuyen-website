@@ -1,0 +1,167 @@
+.img-shadow {
+    box-shadow: 1px 1px 11px gray;
+}
+/* ------ */
+.about-pic-top {
+    position: relative;
+    background-image: url('/src/assets/images/1_25E-9tOk3sSVNqU_HvsoHw.jpeg');
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-attachment: fixed;
+    background-size: 1550px 1060px;
+    min-height: 410px;
+    filter: opacity(32%);
+}
+
+.about {
+    margin: 45px 130px;
+    color: #5b5f97;
+    font-size: 16px;
+}
+
+.about-title h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #5b5f97;
+    font-weight: 900;
+    font-size: 40px;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.about .about-info p {
+    margin-bottom: 15px;
+}
+
+.about-founder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.about-founder-img {
+    background: url('/src/assets/images/founder.png');
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-size: 330px; 
+    height: 360px;
+    max-width: 330px;
+    border-radius: 15px;
+}
+
+.about-founder-info {
+    padding-left: 45px;
+}
+
+.about-founder-info ul li {
+    list-style-type: circle;
+}
+
+.about-founder-info > h3 {
+    margin-bottom: 15px;
+    color: #3b415b;
+}
+
+.about-value {
+    background-color: #dee0ec;
+    padding-top:35px;
+    padding-bottom: 45px;
+}
+
+.about-value h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #3b415b;
+}
+
+.about-value ul li {
+    margin-right: 138px;
+    margin-left: 138px;
+    margin-bottom: 20px;
+    color: #5b5f97;
+    font-size: 16px;
+    list-style-type: circle;
+}
+
+.about-team {
+    background-color: #b8b8d1;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.about-team .about-team-title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.about-team .about-team-title h3 {
+    margin-bottom: 30px;
+    color: #3b415b;
+}
+
+.about-value-pic {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 150px;
+}
+
+.about-value-pic .picture {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: #ccc;
+    /* background-image: url('/src/assets/images/value_01.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+}
+
+.pic-1 {
+    background-image: url('../../../../assets/images/aboutus-3.png');
+}
+
+.pic-2 {
+    background-image: url('../../../../assets/images/aboutus-4.jpg');
+}
+
+.pic-3 {
+    background-image: url('../../../../assets/images/aboutus-5.jpg');
+}
+
+.about-team-pic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 0 90px;
+}
+
+.about-team-pic .teacher {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* .about-team-pic .teacher:hover {
+    border-radius: 10px;
+    background-color: #fff;
+    
+} */
+
+.about-team-pic .teacher-pic {
+    /* background-image: url('/src/assets/images/teacher-pic.png'); */
+    background-size: 250px 250px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+
+.about-team-pic h5 {
+    margin-top: 15px;
+    color: #3b415b;
+    text-align: center;
+}

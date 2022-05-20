@@ -1,0 +1,20 @@
+/* Slideshow */
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 700px;
+}
+.slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+}
+.slide {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}

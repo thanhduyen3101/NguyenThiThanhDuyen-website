@@ -1,0 +1,248 @@
+/* For mobile phones: */
+.upper {
+    text-transform: uppercase;
+}
+
+.title {
+    /* margin-bottom: 70px; */
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    color: #3b415b;
+}
+
+.title h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.title p {
+    font-size: 18px;
+}
+
+.desc {
+    font-size: 12px;
+}
+
+.btn-more {
+    border: none;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(
+        to right,
+        #5b5f97 50%,
+        #5b5f97 50%,
+        #b8b8d1
+    );
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #fff;
+}
+
+.btn-more:hover {
+    background-position: 100% 0%;
+}
+
+.btn-more:active {
+    transform: translateY(4px);
+}
+
+/* --- */
+#banner {
+    position: relative;
+    padding-top: 50%;
+    background: url('/src/assets/images/banner-01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 1550px 820px;
+    filter: opacity(75%);
+}
+
+.banner-text h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.banner-text p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.banner-text {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    /* padding-left: 65px; */
+}
+
+.banner-text button {
+    padding: 20px 50px;
+    border: none;
+    border-radius: 40px;
+    background-image: linear-gradient( 
+        to right, 
+        #ffc145 50%, 
+        #ffc145 50%, 
+        #f9dfab );
+    background-size: 200%;
+    background-position: 0%;
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.banner-text button:hover {
+    background-position: 100% 0%;
+}
+
+.banner-text button:active {
+    transform: translateY(4px);
+}
+
+#achieved {
+    width: 100%;
+    min-height: 350px;
+    background-color: #fff;
+    padding: 87px 34px 30px;
+}
+
+.achieved-data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.achieved-data .data-box {
+    height: 185px;
+    width: 230px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    margin: 0px 20px;
+    border-radius: 20px;
+    background-color: #b8b8d1;
+    color: #3b415b;
+    box-shadow: 3px 3px 9px #ccc;
+}
+
+.achieved-data .data-count {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+
+#program {
+    margin-top: 87px;
+    margin-bottom: 45px;
+}
+
+/* #program .program-pic {
+    background-image: url('/src/assets/images/coursee.png');
+    background-repeat: no-repeat;
+    background-position: center;    
+    position: relative;
+    background-size: 1550px 680px;
+    min-height: 670px;
+} */
+
+.program-title {
+    text-align: right;
+    margin-right: 120px;
+    padding-top: 220px;
+    padding-left: 500px;
+    color: #3b415b;
+}
+
+.program-title h2 {
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.program-name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.program-card {
+    position: relative;
+    width: 360px;
+    height: 220px;
+    margin: 5px;
+}
+
+.program-card img {
+    width: 100%;
+    height: 220px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #dee0ec;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    transition: .4s ease;
+    border-radius: 19px;
+}
+
+.program-card:hover .overlay {
+    height: 100%;
+}
+
+.program-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #3b415b;
+    padding-right: 17px;
+}
+
+.program-text h4 {
+    margin-bottom: 10px;
+}
+
+.program-btn {
+    position: relative;
+    bottom: -35px;
+    left: 120px;
+}
+
+.program-btn a {
+    text-decoration: none;
+    color: #fffffb;
+}
+
+#signup {
+    background-color: #b8b8d1;
+}
+.slide-show {
+    margin-top: 60px;
+}
+
+
+
+

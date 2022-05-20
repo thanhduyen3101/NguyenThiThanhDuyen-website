@@ -1,0 +1,13 @@
+[
+    {"user_id":1,"salesman_name":"Brittan Rois","order_amount":"Hai Chau","checkin_amount":"5000 $"},
+    {"user_id":2,"salesman_name":"John Doe","order_amount":"Son Tra","checkin_amount":"3560 $"},
+    {"user_id":3,"salesman_name":"Cris Devil","order_amount":"Thanh Khe","checkin_amount":"1950 $"},
+    {"user_id":4,"salesman_name":"Bille Kayne","order_amount":"Cam Le","checkin_amount":"3175 $"},
+    {"user_id":5,"salesman_name":"Daniel Vile","order_amount":"Lien Chieu","checkin_amount":"3489 $"},
+    {"user_id":6,"salesman_name":"Le Bron","order_amount":"Ngu Hanh Son","checkin_amount":"4567 $"},
+    {"user_id":7,"salesman_name":"Wan Bisaka","order_amount":"Cam Le","checkin_amount":"3145 $"},
+    {"user_id":8,"salesman_name":"Maguire Hill","order_amount":"Lien Chieu","checkin_amount":"6878 $"},
+    {"user_id":9,"salesman_name":"Messi Ben","order_amount":"Son Tra","checkin_amount":"5356 $"},
+    {"user_id":10,"salesman_name":"Levan Ski","order_amount":"Thanh Khe","checkin_amount":"10580 $"}
+    
+    ]

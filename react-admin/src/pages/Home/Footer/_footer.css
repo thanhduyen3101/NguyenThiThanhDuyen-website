@@ -1,0 +1,64 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(184, 184, 184);
+    display: flex;
+    position: relative;
+    padding: 55px 34px 30px;
+    font-size: 15px;
+}
+
+.footer-logo{
+    display: block;
+    background-image: url('/src/assets/images/logo-01.png');
+    background-position: center;
+    background-size: cover;
+    width: 155px;
+    height: 85px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.footer-info,
+.footer-map {
+    padding: 10px 18px;
+}
+
+.footer-info h3 {
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.footer-copy {
+    background-color: rgb(184, 184, 184);
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.partner-logo {
+    display: flex;
+}
+
+.idp-logo{
+    background-image: url('/src/assets/images/idp-logo.png');
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    width: 220px;
+}
+
+.bc-logo{
+    background-image: url('/src/assets/images/bc-logo.png');
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    width: 174px;
+    margin-right: 25px;
+}

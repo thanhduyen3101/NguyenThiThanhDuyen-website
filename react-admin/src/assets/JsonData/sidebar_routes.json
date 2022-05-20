@@ -1,0 +1,28 @@
+[
+    {
+        "display_name": "Học viên",
+        "route": "/admin/users",
+        "icon": "bx bx-user-pin"
+    },
+    
+    {
+        "display_name": "Khóa học",
+        "route": "/admin/course",
+        "icon": "bx bx-list-ol"
+    },
+    {
+        "display_name": "Lượt đăng ký",
+        "route": "/admin/orders",
+        "icon": "bx bx-cart"
+    },
+    {
+        "display_name": "DS giáo viên",
+        "route": "/admin/teachers",
+        "icon": "bx bx-cart"
+    },
+    {
+        "display_name": "Điểm học viên",
+        "route": "/admin/score_detail   ",
+        "icon": "bx bx-bar-chart"
+    }
+]

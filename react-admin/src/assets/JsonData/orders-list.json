@@ -1,0 +1,22 @@
+[
+{"id":1,"saleman":"Brittan Rois","shop":"Brittan Rois","total_price":"7112 $","area":"Hai Chau","created_at":"01/22/15 17:15","updated_at":"01/22/15 17:15","status":"waiting","enable":1},
+{"id":2,"saleman":"John Doe","shop":"John Doe","total_price":"9512 $","area":"Son Tra","created_at":"12/02/15 14:58","updated_at":"12/02/15 14:58","status":"received","enable":0},
+{"id":3,"saleman":"Cris Devil","shop":"Cris Devil","total_price":"10121 $","area":"Thanh Khe","created_at":"12/23/16 09:33","updated_at":"12/23/16 09:33","status":"waiting"},
+{"id":4,"saleman":"Bille Kayne","shop":"Bille Kayne","total_price":"4067 $","area":"Cam Le","created_at":"07/03/16 07:37","updated_at":"07/03/16 07:37","status":"received","enable":1},
+{"id":5,"saleman":"Daniel Vile","shop":"Daniel Vile","total_price":"8956 $","area":"Lien Chieu","created_at":"07/04/17 04:06","updated_at":"07/04/17 04:06","status":"shipping"},
+{"id":6,"saleman":"Le Bron","shop":"Le Bron","total_price":"6215 $","area":"Ngu Hanh Son","created_at":"01/22/15 17:15","updated_at":"01/22/15 17:15","status":"shipping"},
+{"id":7,"saleman":"Wan Bisaka","shop":"Wan Bisaka","total_price":"7469 $","area":"Cam Le","created_at":"12/02/15 14:58","updated_at":"12/02/15 14:58","status":"waiting","enable":1},
+{"id":8,"saleman":"Maguire Hill","shop":"Maguire Hill","total_price":"9002 $","area":"Lien Chieu","created_at":"12/23/16 09:33","updated_at":"12/23/16 09:33","status":"received"},
+{"id":9,"saleman":"Messi Ben","shop":"Messi Ben","total_price":"6116 $","area":"Son Tra","created_at":"07/03/16 07:37","updated_at":"07/03/16 07:37","status":"received","enable":1},
+{"id":10,"saleman":"Levan Ski","shop":"Levan Ski","total_price":"3089 $","area":"Thanh Khe","created_at":"07/04/17 04:06","updated_at":"07/04/17 04:06","status":"waiting"},
+{"id":11,"saleman":"Kristan Maya","shop":"Kristan Maya","total_price":"8005 $","area":"Son Tra","created_at":"01/22/15 17:15","updated_at":"01/22/15 17:15","status":"shipping"},
+{"id":12,"saleman":"Bravo Cahill","shop":"Bravo Cahill","total_price":"6969 $","area":"Lien Chieu","created_at":"12/02/15 14:58","updated_at":"12/02/15 14:58","status":"waiting"},
+{"id":13,"saleman":"Jack Brall","shop":"Jack Brall","total_price":"10101 $","area":"Ngu Hanh Son","created_at":"12/23/16 09:33","updated_at":"12/23/16 09:33","status":"received"},
+{"id":14,"saleman":"Brittan Rois","shop":"Brittan Rois","total_price":"7112 $","area":"Thanh Khe","created_at":"07/03/16 07:37","updated_at":"07/03/16 07:37","status":"waiting"},
+{"id":15,"saleman":"Roy Kane","shop":"Roy Kane","total_price":"7600 $","area":"Cam Le","created_at":"07/04/17 04:06","updated_at":"07/04/17 04:06","status":"waiting"},
+{"id":16,"saleman":"Tim Create","shop":"Tim Create","total_price":"5901 $","area":"Son Tra","created_at":"01/22/15 17:15","updated_at":"01/22/15 17:15","status":"shipping"},
+{"id":17,"saleman":"Soy Barrack","shop":"Soy Barrack","total_price":"8989 $","area":"Lien Chieu","created_at":"12/02/15 14:58","updated_at":"12/02/15 14:58","status":"received"},
+{"id":18,"saleman":"Obama Kine","shop":"Obama Kine","total_price":"2909 $","area":"ngu Hanh Son","created_at":"12/23/16 09:33","updated_at":"12/23/16 09:33","status":"waiting"},
+{"id":19,"saleman":"Donald Trumd","shop":"Donald Trumd","total_price":"7112 $","area":"Lien Chieu","created_at":"07/03/16 07:37","updated_at":"07/03/16 07:37","status":"received"},
+{"id":20,"saleman":"Stil Walker","shop":"Stil Walker","total_price":"7112 $","area":"Thanh Khe","created_at":"07/04/17 04:06","updated_at":"07/04/17 04:06","status":"shipping"}
+]
