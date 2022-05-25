@@ -61,6 +61,33 @@
                                     },
                                     {
                                         "properties": {
+                                            "maximum_student": {
+                                                "type": "integer",
+                                                "example": "30"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    {
+                                        "properties": {
+                                            "description": {
+                                                "type": "integer",
+                                                "example": "30"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    {
+                                        "properties": {
+                                            "id_teacher": {
+                                                "type": "string",
+                                                "example": "USER00003"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    {
+                                        "properties": {
                                             "image": {
                                                 "description": "",
                                                 "type": "string",
@@ -86,13 +113,13 @@
                 ]
             }
         },
-        "/api/category/list": {
+        "/api/student/category/list": {
             "get": {
                 "tags": [
                     "Category"
                 ],
-                "summary": "Get list all categories",
-                "operationId": "af53c34e913a78d43ac0e457ced1c1c5",
+                "summary": "Get list all categories for student",
+                "operationId": "697428f2166c97b59cba133f05b0374e",
                 "responses": {
                     "200": {
                         "description": "Successful"
@@ -670,13 +697,13 @@
                 ]
             }
         },
-        "/api/order/list/salesman": {
+        "/api/order/list/student": {
             "get": {
                 "tags": [
                     "Order"
                 ],
                 "summary": "Get list order of salesman",
-                "operationId": "89007dfcd60efb3ce6c52e71cb64233a",
+                "operationId": "8290937f937cac4db86f5448c8b4f85c",
                 "responses": {
                     "200": {
                         "description": "Successful"
@@ -1032,9 +1059,9 @@
                         "application/json": {
                             "schema": {
                                 "properties": {
-                                    "customer_id": {
+                                    "course_id": {
                                         "type": "string",
-                                        "example": "CUS0001"
+                                        "example": "COURSE0001"
                                     }
                                 },
                                 "type": "object"
@@ -1054,13 +1081,13 @@
                 ]
             }
         },
-        "/api/product/list": {
+        "/api/product/list/{course_id}": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "Get list product",
-                "operationId": "5629680819415c21cd0f3d0ed5fdd4b1",
+                "operationId": "334f8bae45bcc7e18a0689543459b9e3",
                 "responses": {
                     "200": {
                         "description": "Successful"
@@ -1115,13 +1142,13 @@
                 ]
             }
         },
-        "/api/product/list/category/{category_id}": {
+        "/api/product/detail/{course_id}": {
             "get": {
                 "tags": [
                     "Product"
                 ],
                 "summary": "View product by category",
-                "operationId": "1b99d99971e71a1e5f420d41813948e6",
+                "operationId": "a1f5b136f5ec9b921623b7c427686065",
                 "parameters": [
                     {
                         "name": "category_id",
@@ -1826,13 +1853,13 @@
                 ]
             }
         },
-        "/api/admin/user/salesman/list": {
+        "/api/admin/teacher/list": {
             "get": {
                 "tags": [
                     "User"
                 ],
-                "summary": "Get list salesman",
-                "operationId": "8280ef27deffab0b46a9a6fe6c4a1e73",
+                "summary": "Get list teacher",
+                "operationId": "40e8089dba83689fa6c378a6e2863dcc",
                 "responses": {
                     "200": {
                         "description": "Successful"

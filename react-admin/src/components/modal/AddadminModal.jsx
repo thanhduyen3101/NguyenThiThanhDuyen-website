@@ -20,7 +20,7 @@ function AddadminModal({ setOpenModal, setValue }) {
     formData.append("name", name);
     formData.append("email", email);
     formData.append("password", password);
-    formData.append("tel", tel);
+    formData.append("phone", tel);
     formData.append("sex", sex);
     formData.append("address", address);
 

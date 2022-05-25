@@ -63,7 +63,7 @@ function EditkpidetailModal({
 
   return (
     <div className="modalBackground">
-      <div className="modalContainer">
+      <div className="modalContainer-score">
         <span
           className="close-icon"
           onClick={() => {

@@ -13,12 +13,12 @@
     {
         "display_name": "Lượt đăng ký",
         "route": "/admin/orders",
-        "icon": "bx bx-cart"
+        "icon": "bx bx-list-check"
     },
     {
-        "display_name": "DS giáo viên",
+        "display_name": "Giảng viên",
         "route": "/admin/teachers",
-        "icon": "bx bx-cart"
+        "icon": "bx bx-user-pin"
     },
     {
         "display_name": "Điểm học viên",

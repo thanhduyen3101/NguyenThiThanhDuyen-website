@@ -104,7 +104,7 @@ function AddProduct({ setOpenModal, setValue, courseId }) {
             <img src={imageprev} className="add-product__img" alt="IMG"></img>
 
             <label for="file" className="add-product__label">
-              UPLOAD PRODUCT IMAGE
+              TẢI HÌNH ẢNH LÊN
               <input
                 type="file"
                 id="file"
@@ -127,7 +127,7 @@ function AddProduct({ setOpenModal, setValue, courseId }) {
             className="add-product__button-item pupble-color"
             onClick={() => handleOnclick()}
           >
-            Add
+            Thêm
           </button>
           <button
             className="add-product__button-item red-color"
@@ -135,7 +135,7 @@ function AddProduct({ setOpenModal, setValue, courseId }) {
               setOpenModal(false);
             }}
           >
-            Cancel
+            Hủy
           </button>
         </div>
       </div>

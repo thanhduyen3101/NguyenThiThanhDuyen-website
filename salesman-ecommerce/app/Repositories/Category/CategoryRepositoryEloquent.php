@@ -68,6 +68,7 @@ class CategoryRepositoryEloquent extends RepositoryEloquent implements CategoryR
                 'categories.id_teacher',
                 'categories.end_day',
                 'orders.order_id as order_id',
+                'orders.status as status',
                 DB::raw('COUNT(products.id) as amount_registed')
             )
             ->leftjoin('products', 'products.course_id', 'categories.course_id')
@@ -160,7 +161,7 @@ class CategoryRepositoryEloquent extends RepositoryEloquent implements CategoryR
 
     public function getKPIBySalesman($salesman_id) {
         $result = DB::table('kpi')
-        ->where('kpi.salesman_id', $salesman_id)
+        ->where('kpi.student_id', $salesman_id)
         ->orderByDesc('kpi_id')
         ->first();
         return $result;

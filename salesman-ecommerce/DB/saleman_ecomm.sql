@@ -360,7 +360,7 @@ CREATE TABLE `users` (
 -- Đang đổ dữ liệu cho bảng `users`
 --
 
-INSERT INTO `users` (`id`, `user_id`, `name`, `email`, `password`, `tel`, `address`, `avatar`, `birthday`, `sex`, `admin`, `enabled`, `remember_token`, `created_at`, `updated_at`, `type_id`, `courses_id`) VALUES
+INSERT INTO `users` (`id`, `user_id`, `name`, `email`, `password`, `tel`, `address`, `avatar`, `birthday`, `sex`, `admin`,`remember_token`, `created_at`, `updated_at`, `type_id`, `courses_id`) VALUES
 (1, 'USER00000001', 'Admin', 'admin@gmail.com', '$2y$10$FWVFZgZQOqk5PZ3E42Xw2.gy0PYqDpypltMJQyt9XOhEKNCXNVPCW', '0352689471', 'DN', NULL, '1999-12-30', 1, 1, 1, NULL, '2021-12-25 22:55:12', '2021-12-26 00:15:48', 'ADM', NULL),
 (3, 'USER00000002', 'Salesman', 'salesman@gmail.com', '$2y$10$cBslopczjKyVYjaxVgKjQOmwmaVBJMNXHVY/DN6zio5vVfu4OsNwO', '0272658491', 'DN', NULL, NULL, NULL, 0, 1, NULL, '2021-12-25 23:15:22', '2021-12-25 23:15:22', 'SM', NULL),
 (4, 'USER00000003', 'Admin1', 'dtthuy.17it1@sict.udn.vn', '$2y$10$jGPUV4bOUrtGCANzbAJj.eZ9Gv6rKFDh98TUA0wMiWVNHwZCATWYi', '0352689471', 'DN', '1', '1999-12-30', 1, 0, 1, NULL, '2021-12-25 23:54:09', '2022-01-06 21:34:29', 'ADM', NULL),

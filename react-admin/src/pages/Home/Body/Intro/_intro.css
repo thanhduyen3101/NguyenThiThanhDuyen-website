@@ -72,6 +72,7 @@
 }
 
 .banner-text p {
+
     font-size: 40px;
     font-weight: 600;
 }
@@ -186,6 +187,7 @@
     width: 360px;
     height: 220px;
     margin: 5px;
+
 }
 
 .program-card img {
@@ -193,7 +195,7 @@
     height: 220px;
     display: block;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .overlay {
@@ -204,9 +206,17 @@
     background-color: #dee0ec;
     width: 100%;
     overflow: hidden;
+    max-lines: 2;
+    text-overflow: ellipsis;
     height: 0;
     transition: .4s ease;
-    border-radius: 19px;
+    border-radius: 9px;
+}
+
+.overlay p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 50px;
 }
 
 .program-card:hover .overlay {
@@ -218,20 +228,25 @@
     top: 20px;
     left: 20px;
     color: #3b415b;
+    
     padding-right: 17px;
 }
 
 .program-text h4 {
     margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .program-btn {
     position: relative;
-    bottom: -35px;
     left: 120px;
+    margin-top: 80px;
 }
 
 .program-btn a {
+    max-lines: 2;
+    text-overflow: ellipsis;
     text-decoration: none;
     color: #fffffb;
 }

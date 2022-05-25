@@ -282,8 +282,8 @@ input:focus {
 }
 
 .product-description>h5 {
-    margin-top: 15px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    color: #455560;
 }
 
 .product-price>h4 {

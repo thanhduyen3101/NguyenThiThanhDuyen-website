@@ -16,10 +16,11 @@ import { Dropdown } from "react-bootstrap";
 import { apiUrl } from '../context/Constants'
 
 const orderTableHead = [
-  "Order id",
-  "Student name",
-  "status",
-  "confirm",
+  "Mã đăng ký",
+  "Tên học viên",
+  "Khóa học",
+  "Tình Trạng",
+  "Xác thực",
 ];
 
 const Orders = () => {
@@ -32,6 +33,7 @@ const Orders = () => {
       `${apiUrl}/admin/order/list`
     );
     setOrderlist(response.data.data);
+    
     setValue(false);
   }
   const confirm = async (id, st) => {
@@ -60,34 +62,34 @@ const Orders = () => {
     window.location.href = "/admin/order/detail/?id=" + id;
   };
 
-  const renderBody = (item, index) => {
+  function renderBody(item, index) {
     let colorBtn = item.status_name;
+    
     return (
       <tr key={index}>
         <td>{item.order_id}</td>
-        <td>{item.student_name}</td>
+        <td style={{ textAlign: "left" }}>{item.student_name}</td>
+        <td style={{ textAlign: "left" }}>{item.course_name}</td>
         <td>
-          <div className="status">
-            <button className={`status-button color-${colorBtn}`}>
-              {item.status_name}
-            </button>
+          <div>
+            {item.status_name}
           </div>
         </td>
         <td>
           {item.status == "STT2" ? (
-            <div className="d-flex">
-              <div className="confirm" style={{marginRight: "10px"}}>
-                <button onClick={() => confirm(item.id, 1)}>Confirm</button>
+            <div className="d-flex" style={{ justifyContent: "center" }}>
+              <div className="confirm" style={{ marginRight: "10px" }}>
+                <button onClick={() => confirm(item.id, 1)}>Xác thực</button>
               </div>
-              <div >
-                <button className="status-button color-Canceled" onClick={() => confirm(item.id, 2)}>Reject</button>
+              <div>
+                <button className="status-button color-Canceled" onClick={() => confirm(item.id, 2)}>Hủy</button>
               </div>
             </div>
           ) : null}
         </td>
       </tr>
     );
-  };
+  }
 
   useEffect(() => {
     fetchData();
@@ -113,7 +115,7 @@ const Orders = () => {
             <div className="card__body">
               {orderlist ? (
                 <Table
-                  limit="5"
+                  limit="20"
                   headData={orderTableHead}
                   renderHead={(item, index) => renderHead(item, index)}
                   bodyData={orderlist}

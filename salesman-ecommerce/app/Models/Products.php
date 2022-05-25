@@ -16,6 +16,7 @@ class Products extends Model
         'lesson_id',
         'course_id',
         'content',
-        'image'
+        'image',
+        'enable'
     ];
 }

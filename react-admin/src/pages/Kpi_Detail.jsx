@@ -13,8 +13,8 @@ import kpidetailList from "../assets/JsonData/kpi-detail-list.json";
 const kpiTableHead = [
   "ID",
   "Tên học viên",
-  "Bài test 1",
-  "Bài test 2", "Tổng kết","Action"
+  "Bài Kiểm tra 1",
+  "Bài Kiểm tra 2", "Tổng kết","Thao tác"
 ];
 const Kpi_Detail = () => {
   const [editmodalOpen, setEditmodalopen] = useState(false);
@@ -75,7 +75,7 @@ const Kpi_Detail = () => {
     return (
       <tr key={index}>
         <td>{item.id}</td>
-        <td>{item.name}</td>
+        <td style={{ textAlign: "left" }}>{item.name}</td>
         <td>{item.test_1}</td>
         <td>{item.test_2}</td>
         {/* <td>
@@ -139,7 +139,7 @@ const Kpi_Detail = () => {
               <div className="card__body">
                 {kpilist && kpilist.length > 0 ? (
                   <Table
-                    limit="5"
+                    limit="10"
                     headData={kpiTableHead}
                     bodyData={kpilist}
                     renderHead={(item, index) => renderHead(item, index)}

@@ -4,7 +4,7 @@ const Row = ({ item, value, onEdit = () => {}, onDelete, onDetail }) => {
   return (
     <tr>
       <td>{item.course_id}</td>
-      <td>{item.name}</td>
+      <td style={{ textAlign: "left", paddingLeft: "29px" }}>{item.name}</td>
       <td>{item.maximum_student}</td>
       <td>{item.amount_registed}</td>
       <td>

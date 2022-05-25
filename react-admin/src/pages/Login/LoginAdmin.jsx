@@ -89,7 +89,6 @@ const LoginAdmin = () => {
       const loginData = await loginUser(loginForm);
       if (loginData.success) {
         window.location.href = "/admin/users";
-   
       } else {
         toast(loginData.message);
       }
@@ -129,7 +128,7 @@ const LoginAdmin = () => {
                               className="input-custom"
                               name="email"
                               type="text"
-                              placeholder="email"
+                              placeholder="Email"
                               value={email}
                               onChange={onChangeLoginForm}
                               required
@@ -143,7 +142,7 @@ const LoginAdmin = () => {
                               className="input-custom"
                               name="password"
                               type="password"
-                              placeholder="Password"
+                              placeholder="Mật khẩu"
                               value={password}
                               onChange={onChangeLoginForm}
                               required
@@ -156,7 +155,7 @@ const LoginAdmin = () => {
                             <Form.Check
                               className="ml-3"
                               type="checkbox"
-                              label="Remember password"
+                              label="Nhớ mật khẩu"
                             />
                           </Form.Group>
                           <Button
@@ -164,7 +163,7 @@ const LoginAdmin = () => {
                             className="btn-custom"
                             type="submit"
                           >
-                            Login
+                            Đăng nhập
                           </Button>
                           {/* <Form.Group className="mb-3 text-left">
                             <Form.Label className="forgot">

@@ -33,6 +33,12 @@ class OrderRepositoryEloquent extends RepositoryEloquent implements OrderReposit
         ->first();
         return $result;
     }
+    public function getCourseName($id) {
+        $result = DB::table('categories')
+        ->where('categories.course_id',$id)
+        ->first();
+        return $result;
+    }
 
     public function getAllOrder() {
         $result = $this->_model
@@ -45,9 +51,11 @@ class OrderRepositoryEloquent extends RepositoryEloquent implements OrderReposit
                 'status.name as status_name',
                 'orders.created_at',
                 'orders.updated_at',
+                'categories.name as course_name'
             )
             ->join('users', 'users.user_id', '=', 'orders.student_id')
             ->join('status', 'status.status_id', '=', 'orders.status')
+            ->join('categories', 'categories.course_id', '=', 'orders.course_id')
             ->orderBy('order_id', 'desc')
             ->get();
         return $result;
@@ -64,6 +72,7 @@ class OrderRepositoryEloquent extends RepositoryEloquent implements OrderReposit
                 'orders.status',
                 'status.name as status_name',
                 'orders.created_at',
+                'categories.name as course_name',
                 'orders.updated_at',
             )
             ->join('users', 'users.user_id', '=', 'orders.student_id')

@@ -93,11 +93,13 @@
 .add-product__label {
     color: white;
     background-color: #857ED4;
-    width: 87%;
+    width: 70%;
     height: 50px;
     margin: 10px auto;
     border-radius: 10px;
-    padding: 10px 46px;
+    /* padding: 10px 30px; */
+    padding-top: 15px;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -123,8 +125,9 @@
 
 .add-product__short-description {
     width: 90%;
-    padding: 10px 20px 40px;
+    padding: 10px 10px 130px;
     margin: 10px 20px;
+    border-radius: 7px;
 }
 
 .add-product__textarea {

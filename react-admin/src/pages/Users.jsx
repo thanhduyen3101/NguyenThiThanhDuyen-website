@@ -22,7 +22,7 @@ const userTableHead = [
   // "area_id",
   // "type_id",
   // "confirm",
-  // "action",
+  "Thao tác",
 ];
 
 const Users = () => {
@@ -74,15 +74,39 @@ const Users = () => {
 
   const renderBody = (item, index) => {
     return (
-      <tr>
-        <td>{item.user_id}</td>
-        <td>{item.name}</td>
-        <td>{item.email}</td>
+      <tr >
+        <td style={{ color: "gray" }}>{item.user_id}</td>
+        <td style={{ textAlign: "left" }}>{item.name}</td>
+        <td style={{ textAlign: "left", textTransform: "lowercase" }}>{item.email}</td>
         <td>{item.tel}</td>
-        <td>{item.address}</td>
+        <td style={{ textAlign: "left" }}>{item.address}</td>
+        <td><div className="delete-action">
+            <button onClick={()=>deleteCate(item.id)}
+                >
+              <i className="bx bx-trash" style={{ fontSize: "20px",lineHeight: 1.5}} />
+            </button>
+          </div></td>
       </tr>
     );
   };
+
+  async function deleteCate(id) {
+    await axios
+      .post(`${apiUrl}/admin/user/delete/${id}`)
+      .then(async (response) => {
+        toast(response.data.message);
+        if (response.data.success) {
+          setValue(true);
+        }
+      })
+      .catch((error) => {
+        if (error.response) {
+          toast(error.response.data.message);
+        } else {
+          toast("Error");
+        }
+      });
+  }
 
   useEffect(() => {
     fetchData();

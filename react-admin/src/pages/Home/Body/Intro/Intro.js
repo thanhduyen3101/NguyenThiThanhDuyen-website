@@ -67,7 +67,7 @@ function Intro() {
       </div>
       <div id='program'>
         <div>
-          <div className='title'>
+          <div className='title' style={{ marginBottom: "50px" }}>
               <h2>Chương trình đạo tạo phù hợp với mọi đối tượng</h2>
           </div>
         <div className='program-name' id='list-program'>
@@ -80,11 +80,11 @@ function Intro() {
               <div className='overlay'>
                 <div className='program-text'>
                   <h4>{datacourse.name}</h4>
-                  <p>{datacourse.description}</p>
+                  {/* <p>{datacourse.description}</p> */}
                   <div>
                       <HashLink to={'course/detail/'+datacourse.course_id}>
                         <button className='btn-more program-btn'>
-                            More
+                            Chi tiết
                         </button>
                       </HashLink>
                   </div>

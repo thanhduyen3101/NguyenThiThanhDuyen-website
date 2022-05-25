@@ -16,6 +16,7 @@ export default function Product({
   content,
   course_name,
   setValue,
+  showAction,
 }) {
   const delproduct = async (id) => {
     toast.dismiss();
@@ -31,6 +32,23 @@ export default function Product({
       toast(error.response.data.message);
     }
   };
+  async function deleteCate(id) {
+    await axios
+      .post(`${apiUrl}/admin/product/delete/${id}`)
+      .then(async (response) => {
+        toast(response.data.message);
+        if (response.data.success) {
+          // setValue(true);
+        }
+      })
+      .catch((error) => {
+        if (error.response) {
+          toast(error.response.data.message);
+        } else {
+          toast("Error");
+        }
+      });
+  }
 
   // async function delproduct(id) {
   //   await axios
@@ -76,6 +94,7 @@ export default function Product({
       <div className="product-box">
         {addmodalOpen ? (
           <ProductDetail
+          id={id}
             img={img}
             name={name}
             content={content}
@@ -87,10 +106,45 @@ export default function Product({
           <div className="product-img">
             <img src={img} alt="kh" />
           </div>
-          <div className="product-description">
+          <div className="product-description" style={{ textAlign: "center" }}>
             <h5>{name}</h5>
           </div>
+          
         </div>
+        {!showAction 
+        ? <div  style={{textAlign: "center"}}>
+        <button 
+          style={{
+            width: "75px",
+            marginRight: "5px",
+            paddingTop: "7px",
+            paddingBottom: "7px",
+            backgroundColor: "green",
+            borderRadius: "8px",
+            color: "white"
+          }} 
+          onClick={()=>setEditmodalOpen(!editmodalOpen)}
+        >
+          Sửa
+        </button>
+        <button 
+          style={{
+            width: "75px",
+            paddingTop: "7px",
+            paddingBottom: "7px",
+            backgroundColor: "red",
+            borderRadius: "8px",
+            color: "white"
+          }}
+          onClick={()=>deleteCate(id)}
+        >
+          Xóa
+        </button>  
+        </div>
+        : null
+        }
+        
+        
         {/* <div className="product-action">
           <div className="edit-action">
             <button onClick={() => setModal()}>
@@ -115,9 +169,13 @@ export default function Product({
           setOpenModal={setEditmodalOpen}
           setAddmodalOpen={setAddmodalOpen}
           idProduct={id}
+          id={id}
+          img={img}
+          name={name}
+          content={content}
           setValue={setValue}
         />
-      ) : null}
+      ) :null}
     </>
   );
 }

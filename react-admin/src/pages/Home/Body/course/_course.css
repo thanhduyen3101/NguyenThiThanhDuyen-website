@@ -25,6 +25,50 @@
     transform: translateY(4px);
 }
 
+.btn-stt4 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background-size: 200%;
+    background-position: 0%;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #39c45b;
+    cursor: default !important;
+}
+
+.btn-stt3 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background-size: 200%;
+    background-position: 0%;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #EF4836;
+    cursor: default !important;
+}
+
+.btn-stt2 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background-size: 200%;
+    background-position: 0%;
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #5d5e33;
+    cursor: default !important;
+}
+
+
+
 .course-title {
     height: 250px;
     display: flex;

@@ -14,6 +14,7 @@ function AddcateModal({ setOpenModal, setValue }) {
   const [max, setMax] = useState(0);
   const [start, setStart] = useState('');
   const [end, setEnd] = useState('');
+  const [desc, setDesc] = useState('');
   const [image, setImage] = useState('');
   const [idTeacher, setIdTeacher] = useState('');
   const [listTeacher, setListTeacher] = useState();
@@ -37,6 +38,7 @@ function AddcateModal({ setOpenModal, setValue }) {
     formData.append("maximum_student", max);
     formData.append("start_day", start);
     formData.append("end_day", end);
+    formData.append("description", desc);
     formData.append("id_teacher", idTeacher);
     formData.append("image", image ? image : "");
 
@@ -75,7 +77,7 @@ function AddcateModal({ setOpenModal, setValue }) {
   }, []);
   return (
     <div className="modalBackground" style={{overflow: "scroll"}}>
-      <div className="modalContainer" style={{height: "700px", marginTop: "100px"}}>
+      <div className="modalContainer" style={{minHeight: "800px", marginTop: "100px"}}>
         <span
           className="close-icon"
           onClick={() => {
@@ -113,9 +115,12 @@ function AddcateModal({ setOpenModal, setValue }) {
           {listTeacher &&
             listTeacher.map((e, index) => {
               return (
+                <>
+                <option value="" disabled selected hidden>Chọn giảng viên</option>
                 <option key={index} value={e.user_id}>
                   {e.name}
                 </option>
+                </>
               );
             })}
         </select>
@@ -134,10 +139,31 @@ function AddcateModal({ setOpenModal, setValue }) {
             onChange={(e) => setEnd(e.target.value)}
           ></input>
         </div>
+        <div className="d-flex">
+
+<textarea
+            type="date"
+            placeholder="Mô tả"
+            className="input-text"
+            name="description"
+            onChange={(e) => setDesc(e.target.value)}
+          ></textarea>
+        </div>  
+        {/* <div  className="modalBody">
+       <textarea
+            type="text"
+            placeholder="Mô tả"
+            className="input-text"
+            name="description"
+            value={cate.description}
+            onChange={onChangeInput}
+          ></textarea>
+       </div> */}
+       
         <div className="modalBody">
           <img src={imageprev} className="add-cate__img" alt="IMG"></img>
           <label for="file" className="add-cate__label d-flex justify-content-center align-items-center">
-            UPLOAD IMAGE
+            TẢI HÌNH ẢNH LÊN
             <input
               type="file"
               id="file"
@@ -149,6 +175,7 @@ function AddcateModal({ setOpenModal, setValue }) {
             ></input>
           </label>
         </div>
+       
 
         <div className="modalFooter">
           <button
@@ -157,7 +184,7 @@ function AddcateModal({ setOpenModal, setValue }) {
             //   setOpenModal(false);}}
             onClick={() => handleOnclick()}
           >
-            Add
+            Thêm
           </button>
           <button
             className="button-delete"
@@ -166,7 +193,7 @@ function AddcateModal({ setOpenModal, setValue }) {
             }}
             id="cancelBtn"
           >
-            Cancel
+            Hủy
           </button>
         </div>
       </div>

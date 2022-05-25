@@ -21,6 +21,16 @@
     position: relative;
 }
 
+.modalContainer-score {
+    width: 700px;
+    height: 350px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px;
+    position: relative;
+}
+
 .modalFooter,
 .modalFooter1 {
     align-items: center;
@@ -48,7 +58,7 @@
     border: 1px solid #CCCCCC;
     color: black;
     margin: 20px auto 1px;
-    width: 70%;
+    width: 100%;
     padding: 8px 12px;
     display: block;
     font-size: 18px;

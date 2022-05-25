@@ -344,6 +344,7 @@ class ProductController extends BaseController
                 'title' => $req->title,
                 'course_id' => $req->course_id,
                 'content' => $req->content,
+                'enable' => 1,
                 'image' => $req->file('image') ? $i : null,
             );
             $product = $this->productRepository->create(
@@ -562,7 +563,7 @@ class ProductController extends BaseController
             $product = Products::find($id);
             if ($product) {
                 $data = array(
-                    'enabled' => 0,
+                    'enable' => 0,
                 );
                 $this->productRepository->update($product->id, $data);
                 return response()->json([

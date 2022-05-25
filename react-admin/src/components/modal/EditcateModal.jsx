@@ -17,6 +17,7 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
     maximum_student: "",
     start_day: "",
     end_day: "",
+    description: "",
     id_teacher: "",
     image: "",
   });
@@ -73,6 +74,7 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
     formData.append("maximum_student", cate.maximum_student ? cate.maximum_student : "");
     formData.append("start_day", cate.start_day ? cate.start_day : "");
     formData.append("end_day", cate.end_day ? cate.end_day : "");
+    formData.append("description", cate.description ? cate.description : "");
     formData.append("id_teacher", cate.id_teacher ? cate.id_teacher : "");
 
     formData.append("image", image ? image : "");
@@ -107,7 +109,7 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
 
   return (
     <div className="modalBackground" style={{overflow: "scroll"}}>
-      <div className="modalContainer" style={{height: "700px", marginTop: "100px"}}>
+      <div className="modalContainer" style={{minHeight: "800px", marginTop: "100px"}}>
         <span
           className="close-icon"
           onClick={() => {
@@ -120,7 +122,7 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
         <div className="d-flex">
           <input
             type="text"
-            placeholder="Name"
+            placeholder="Tên khóa học"
             name="name"
             value={cate.name}
             className="input-text"
@@ -129,7 +131,7 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
 
           <input
             type="text"
-            placeholder="Maximum student"
+            placeholder="Số lượng học viên tối đa"
             className="input-text"
             name="maximum_student"
             value={cate.maximum_student}
@@ -157,7 +159,7 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
           <input
             type="date"
             name="start_day"
-            placeholder="Start day"
+            placeholder="Ngày bắt đầu"
             className="input-text"
             value={cate.start_day}
             onChange={onChangeInput}
@@ -165,18 +167,26 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
 
           <input
             type="date"
-            placeholder="End day"
+            placeholder="Ngày kết thúc"
             className="input-text"
             name="end_day"
             value={cate.end_day}
             onChange={onChangeInput}
           ></input>
         </div>
+        <textarea
+            type="text"
+            placeholder="Mô tả"
+            className="input-text"
+            name="description"
+            value={cate.description}
+            onChange={onChangeInput}
+          ></textarea>
         <div className="modalBody">
           <img src={imageprev} className="add-cate__img" alt="IMG"></img>
 
           <label for="file" className="add-cate__label d-flex justify-content-center align-items-center">
-            UPLOAD IMAGE
+            TẢI HÌNH ẢNH LÊN
             <input
               type="file"
               id="file"
@@ -193,7 +203,7 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
             className="button-edit"
             onClick={() => handleOnclick()}
           >
-            Edit
+            Sửa
           </button>
           <button
             className="button-delete"
@@ -202,7 +212,7 @@ function EditcateModal({ setOpenModal, setValue, idCate }) {
             }}
             id="cancelBtn"
           >
-            Cancel
+            Hủy
           </button>
         </div>
       </div>

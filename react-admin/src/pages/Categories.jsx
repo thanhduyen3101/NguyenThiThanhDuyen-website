@@ -15,7 +15,7 @@ import { apiUrl } from "../context/Constants";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const cateTableHead = ["ID", "Tên khóa học", "Học viên tối đa", "Học viên hiện tại", "Thao tác", "Mô tả"];
+const cateTableHead = ["ID", "Tên khóa học", "Học viên tối đa", "Học viên hiện tại", "Thao tác"];
 
 const renderHead = (item, index) => <th key={index}>{item}</th>;
 const Category = () => {

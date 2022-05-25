@@ -7,7 +7,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { apiUrl } from '../../context/Constants'
 
-function EditProduct({ setOpenModal, idProduct, setValue, setAddmodalOpen }) {
+function EditProduct({ setOpenModal, idProduct, setValue, setAddmodalOpen ,      id,
+  img,
+  name,
+  content}) {
   const [userlist, setUserlist] = useState();
   const [cateList, setCatelist] = useState();
   const [owner_id, setOwner_id] = useState(null);
@@ -15,37 +18,17 @@ function EditProduct({ setOpenModal, idProduct, setValue, setAddmodalOpen }) {
   const [imageprev, setImageprev] = useState(upload);
   const [image, setImage] = useState(upload);
   const [product, setProduct] = useState({
-    title: "",
-    image: "",
-    price: "",
-    description: "",
-    size: "",
-    category: "",
-    owner_id: "",
+    title: name,
+    image: img,
+    content: content,
   });
-
   const onChangeInput = (event) => {
     setProduct({ ...product, [event.target.name]: event.target.value });
   };
-
-  async function fetchData() {
-    const response2 = await axios.get(
-      `${apiUrl}/product/detail/${idProduct}`
-    );
-    setProduct(response2.data.data);
-    if (response2.data.data && response2.data.data.image) {
-      setImageprev(response2.data.data.image);
-    }
-
-    const response = await axios.get(
-      `${apiUrl}/admin/user/shop/list`
-    );
-    setUserlist(response.data.data);
-
-    const response1 = await axios.get(
-      `${apiUrl}/category/list`
-    );
-    setCatelist(response1.data.data);
+console.log(img); 
+   function fetchData() {
+  
+    setImageprev(img);
   }
 
   useEffect(() => {
@@ -68,18 +51,8 @@ function EditProduct({ setOpenModal, idProduct, setValue, setAddmodalOpen }) {
     const formData = new FormData();
     formData.append("title", product.title ? product.title : "");
     formData.append(
-      "owner_id",
-      product.owner_id ? product.owner_id : userlist[0].user_id
-    );
-    formData.append(
-      "category",
-      product.category ? product.category : cateList[0].category_id
-    );
-    formData.append("size", product.size ? product.size : "");
-    formData.append("price", product.price ? product.price : "");
-    formData.append(
-      "description",
-      product.description ? product.description : ""
+      "content",
+      product.content ? product.content : ""
     );
     formData.append("image", image ? image : "");
 
@@ -119,7 +92,7 @@ function EditProduct({ setOpenModal, idProduct, setValue, setAddmodalOpen }) {
       }}
     >
       <div className="add-product_layout">
-        <h2>Edit Product</h2>
+        <h2>Chỉnh sửa thông tin bài giảng</h2>
         <span
           className="close-icon"
           onClick={() => {
@@ -138,66 +111,18 @@ function EditProduct({ setOpenModal, idProduct, setValue, setAddmodalOpen }) {
               value={product.title}
               onChange={onChangeInput}
             ></input>
-            <select
-              className="add-product__input"
-              name="owner_id"
-              id="id"
-              value={product.owner_id}
-              onChange={onChangeInput}
-            >
-              {userlist &&
-                userlist.map((e) => {
-                  return (
-                    <option key={e.user_id} value={e.user_id}>
-                      {e.name}
-                    </option>
-                  );
-                })}
-            </select>
-            <select
-              className="add-product__input"
-              name="category"
-              id="cate"
-              value={product.category}
-              onChange={onChangeInput}
-            >
-              {cateList &&
-                cateList.map((e) => {
-                  return (
-                    <option key={e.category_id} value={e.category_id}>
-                      {e.name}
-                    </option>
-                  );
-                })}
-            </select>
-            <div className="add-product__group">
-              <input
-                className="add-product__input-item"
-                placeholder="Price"
-                name="price"
-                value={product.price}
-                onChange={onChangeInput}
-              ></input>
-              <input
-                className="add-product__input-item"
-                placeholder="Size"
-                value={product.size}
-                name="size"
-                onChange={onChangeInput}
-              ></input>
-            </div>
             <textarea
               className="add-product__short-description"
               placeholder="Description"
-              name="description"
-              value={product.description}
+              name="content"
+              value={product.content}
               onChange={onChangeInput}
             ></textarea>
           </div>
           <div className="add-product_right">
             <img src={imageprev} className="add-product__img" alt="IMG"></img>
             <label for="file" className="add-product__label">
-              UPLOAD PRODUCT IMAGE
+              TẢI HÌNH ẢNH LÊN
               <input
                 type="file"
                 id="file"
@@ -219,7 +144,7 @@ function EditProduct({ setOpenModal, idProduct, setValue, setAddmodalOpen }) {
             className="add-product__button-item green-color"
             onClick={() => handleOnclick()}
           >
-            Edit
+            Sửa
           </button>
           <button
             className="add-product__button-item red-color"
@@ -227,7 +152,7 @@ function EditProduct({ setOpenModal, idProduct, setValue, setAddmodalOpen }) {
               setOpenModal(false);
             }}
           >
-            Cancel
+            Hủy
           </button>
         </div>
       </div>

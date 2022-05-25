@@ -6,6 +6,7 @@ interface OrderRepositoryInterface
     public function getOrderById($id);
 
     public function getOrderBySTT($status);
+    public function getCourseName($id);
 
     public function getLastOrderId();
 

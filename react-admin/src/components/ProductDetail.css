@@ -40,21 +40,23 @@
 
 .product-detail-top-right {
     margin-left: 16px;
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
 
 .product-detail__name {
-    color: rgb(126, 56, 56);
-    font-size: 18px;
+    /* color: rgb(126, 56, 56); */
+    color: #5b5f97;
+    /* font-size: 18px; */
     font-weight: 600;
 }
 
 .product-detail__cate {
     color: rgb(87, 129, 206);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .product-detail__descriptiont {

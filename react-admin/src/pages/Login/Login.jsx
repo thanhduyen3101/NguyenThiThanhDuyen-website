@@ -80,6 +80,8 @@ const Login = () => {
         // console.log(loginData.data);
         // if (loginData.data.type_id === "ADM") {
         // history.push("/");
+        
+   console.log(loginData.data.token);
         window.location.href = "/";
         // } else {
         //   toast("Does Not Have Access");
@@ -108,7 +110,7 @@ const Login = () => {
                   <div className="d-flex justify-content-center align-items-center w-100 h-100">
                     <div className="login-form w-75 d-flex flex-column align-items-center">
                       <div className="pb-3 d-flex justify-content-center">
-                        <h4>Login</h4>
+                        <h4>Đăng nhập</h4>
                       </div>
                       <div>
                         <Form onSubmit={login}>
@@ -123,7 +125,7 @@ const Login = () => {
                               className="input-custom"
                               name="tel"
                               type="text"
-                              placeholder="Type your phone number"
+                              placeholder="Nhập số điện thoại"
                               value={tel}
                               onChange={onChangeLoginForm}
                               required
@@ -137,7 +139,7 @@ const Login = () => {
                               className="input-custom"
                               name="password"
                               type="password"
-                              placeholder="Password"
+                              placeholder="Mật khẩu"
                               value={password}
                               onChange={onChangeLoginForm}
                               required
@@ -150,7 +152,7 @@ const Login = () => {
                             <Form.Check
                               className="ml-3"
                               type="checkbox"
-                              label="Remember password"
+                              label="Ghi nhớ đăng nhập"
                             />
                           </Form.Group>
                           <Button
@@ -158,7 +160,7 @@ const Login = () => {
                             className="btn-custom"
                             type="submit"
                           >
-                            Login
+                            Đăng nhập
                           </Button>
                           {/* <Form.Group className="mb-3 text-left">
                             <Form.Label className="forgot">

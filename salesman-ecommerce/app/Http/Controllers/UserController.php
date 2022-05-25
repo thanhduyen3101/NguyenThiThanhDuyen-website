@@ -252,8 +252,8 @@ class UserController extends BaseController
                     [
                         'user_id' => $id,
                         'password' => bcrypt($req->password),
-                        'type_id' => "ADM",
-                        'enabled' => 1,
+                        'type_id' => "TEACHER",
+                        'admin' => 1
                     ]
                 )
             );
@@ -989,16 +989,16 @@ class UserController extends BaseController
         try {
             $user = User::find($id);
             if ($user) {
-                $product = $this->productRepository->getProductByOwner($user->user_id);
-                for ($i = 0; $i<count($product); $i++) {
-                    $item = Products::find($product[$i]->id);
-                    if ($item) {
-                        $entity = array(
-                            'enabled' => 0,
-                        );
-                        $this->productRepository->update($item->id, $entity);
-                    }
-                }
+                // $product = $this->productRepository->getProductByOwner($user->user_id);
+                // for ($i = 0; $i<count($product); $i++) {
+                //     $item = Products::find($product[$i]->id);
+                //     if ($item) {
+                //         $entity = array(
+                //             'enabled' => 0,
+                //         );
+                //         $this->productRepository->update($item->id, $entity);
+                //     }
+                // }
                 $data = array(
                     'state' => 0,
                 );

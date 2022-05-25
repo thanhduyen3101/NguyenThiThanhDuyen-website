@@ -81,6 +81,7 @@ class ProductRepositoryEloquent extends RepositoryEloquent implements ProductRep
             )
             ->join('categories', 'categories.course_id', '=', 'products.course_id')
             ->where('products.course_id', $course_id)
+            ->where('products.enable', 1)
             ->orderBy('lesson_id', 'desc')
             ->get();
         if ($result) {

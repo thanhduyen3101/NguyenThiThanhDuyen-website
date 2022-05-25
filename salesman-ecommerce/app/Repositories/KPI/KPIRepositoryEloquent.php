@@ -42,7 +42,7 @@ class KPIRepositoryEloquent extends RepositoryEloquent implements KPIRepositoryI
 
     public function getKPIBySalesman($salesman_id) {
         $result = DB::table('kpi')
-        ->where('kpi.salesman_id', $salesman_id)
+        ->where('kpi.student_id', $salesman_id)
         ->orderByDesc('kpi_id')
         ->get();
         return $result;
